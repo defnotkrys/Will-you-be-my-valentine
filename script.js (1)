@@ -1,0 +1,15 @@
+document.getElementById("yesBtn").addEventListener("click", function() {
+    document.getElementById("response").innerHTML = "😍 Yay! You made my day! ❤️💐";
+});
+
+document.getElementById("noBtn").addEventListener("mouseover", function() {
+    let btn = document.getElementById("noBtn");
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * window.innerHeight + "px";
+    btn.style.left = Math.random() * window.innerWidth + "px";
+});
+
+document.getElementById("noBtn").addEventListener("click", function() {
+    document.getElementById("response").innerHTML = "💔 Oh no! Maybe next time? 😢";
+});
+
